@@ -1,0 +1,8 @@
+{
+  "project_id" : "test",
+  "conduit_uri" : "http://phabricator.example.com/",
+  "default" : "http://phabricator.example.com/",
+  "arc.land.onto.default" : "develop",
+  "arc.land.update.default": "merge",
+  "arc.feature.start.default": "develop"
+}
