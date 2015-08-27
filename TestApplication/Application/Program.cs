@@ -11,7 +11,7 @@ namespace Application
 
         public static void Main(string[] args)
         {
-            ICalculator calc = ObjectFactory.Current.Resolve<ICalculator>();
+            var calc = ObjectFactory.Current.Resolve<ICalculator>();
             calc.Sum(10, 100);
         }
 
