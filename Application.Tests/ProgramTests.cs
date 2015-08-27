@@ -21,8 +21,9 @@ namespace Application.Tests
         [Test]
         public void Should_Call_Calc()
         {
+            _calculator.Setup(c => c.Sum(It.IsAny<int>(), It.IsAny<int>()));
             Program.Main(new string[0]);
-            _calculator.Verify(c => c.Sum(It.Is<int>(i => i == 100), It.Is<int>(i => i == 100)));
+            _calculator.VerifyAll();
         }
     }
 
