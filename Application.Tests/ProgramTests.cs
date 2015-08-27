@@ -22,7 +22,7 @@ namespace Application.Tests
         public void Should_Call_Calc()
         {
             Program.Main(new string[0]);
-            _calculator.Verify(c => c.Sum(It.Is<int>(i => i == 10), It.Is<int>(i => i == 100)));
+            _calculator.Verify(c => c.Sum(It.Is<int>(i => i == 100), It.Is<int>(i => i == 100)));
         }
     }
 
